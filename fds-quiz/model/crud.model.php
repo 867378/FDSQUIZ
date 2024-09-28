@@ -22,7 +22,7 @@ class Crud_model {
 
     public function getOnedata($data) {
         $sql = "SELECT * FROM quizfds WHERE ID = ?";
-        return $this->executeQuery($sql, [$data->ID], "User is not in the database");
+        return $this->executeQuery($sql, [$data->ID], "The user is not on the database");
     }
 
     public function insert($data) {
